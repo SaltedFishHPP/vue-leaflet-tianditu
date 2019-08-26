@@ -1,5 +1,5 @@
 {
-  "name": "vue-leaflet",
+  "name": "vue-leaflet-tianditu",
   "version": "1.0.0",
   "description": "A Vue.js project",
   "author": "huang <h_peifen@163.com>",
@@ -10,8 +10,9 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "leaflet": "^1.5.1",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.7"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

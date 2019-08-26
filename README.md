@@ -1,4 +1,4 @@
-# vue-leaflet
+# vue-leaflet-tianditu
 
 > A Vue.js project
 
