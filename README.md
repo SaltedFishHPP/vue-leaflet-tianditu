@@ -20,3 +20,7 @@ require('leaflet/dist/leaflet.css')
 ``` bash
 import Provider from './chinatmsproviders'
 ```
+
+## 相关解释地址
+
+https://juejin.im/post/5d1f06605188255d545789b9
