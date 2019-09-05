@@ -45,7 +45,6 @@ export default {
   mounted(){
     Provider(L) // 挂载插件
     this.getMap()
-    
   },
   methods:{
     getMap(){
@@ -90,8 +89,6 @@ export default {
                 _this.isMapSelectShow = false
             }, 220);
         })
-
-
 
         // 保存切换地图功能的dom,为了保证保存的dom的正确性，尽量写详细
         for(let node of document.querySelectorAll('.leaflet-control-layers-base label')){

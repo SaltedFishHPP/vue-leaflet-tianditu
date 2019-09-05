@@ -2,20 +2,21 @@
 
 > A Vue.js project
 
-## Build Setup
+## 加载Leaflet依赖
 
 ``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
+npm install leaflet --save
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## 引入Leaflet依赖
+
+``` bash
+import L from 'leaflet'
+require('leaflet/dist/leaflet.css')
+```
+
+## 引入天地图
+
+``` bash
+import Provider from './chinatmsproviders'
+```
