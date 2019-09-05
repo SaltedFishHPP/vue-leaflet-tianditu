@@ -49,7 +49,7 @@ export default {
           let marker = L.marker([res.lat,res.lng]).addTo(map);
           map.addLayer(marker) // 添加标记
           marker.setIcon(L.icon({   // 标记配置-详见leaflet官网
-              iconUrl: require('./icon.png'), // 使用require加载标记图
+              iconUrl: require('../assets/icon.png'), // 使用require加载标记图
               iconSize: [20,25],
           }))
           if(index == 0){

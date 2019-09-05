@@ -26,6 +26,11 @@ let routerArr = [
     name: 'mapMarkerStyle',
     component: resolve => require(['@/components/mapMarkerStyle'], resolve),
   },
+  {
+    path: '/mapChangeLayer',
+    name: 'mapChangeLayer',
+    component: resolve => require(['@/components/mapChangeLayer'], resolve),
+  },
 ]
 
 export default new Router({

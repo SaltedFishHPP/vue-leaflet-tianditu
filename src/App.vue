@@ -23,6 +23,7 @@ export default {
         {name:'marker标记',link:'/mapMarker'},
         {name:'GeoJson行政区划分',link:'/mapGeoJson'},
         {name:'marker自定义样式',link:'/mapMarkerStyle'},
+        {name:'自定义切换图层',link:'/mapChangeLayer'},
       ],
       nowPath: ''
     }
