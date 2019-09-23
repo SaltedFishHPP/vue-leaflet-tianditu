@@ -31,6 +31,13 @@ let routerArr = [
     name: 'mapChangeLayer',
     component: resolve => require(['@/components/mapChangeLayer'], resolve),
   },
+  {
+    path: '/mapCitySelect',
+    name: 'mapCitySelect',
+    component: resolve => require(['@/components/mapCitySelect'], resolve),
+  },
+
+  
 ]
 
 export default new Router({
