@@ -6,10 +6,8 @@
 
 <script>
 import L from 'leaflet'
-import Provider from './chinatmsproviders'
+import Provider from '@/components/chinatmsproviders'
 require('leaflet/dist/leaflet.css')
-import geoJson from './geojson'
-
 export default {
   data () {
     return {
@@ -29,7 +27,6 @@ export default {
         })
         L.tileLayer.chinaProvider('TianDiTu.Normal.Map',{maxZoom:18,minZoom:5,key:this.mapKey}).addTo(map);
         L.tileLayer.chinaProvider('TianDiTu.Normal.Annotion',{maxZoom:18,minZoom:5,key:this.mapKey}).addTo(map);
-        L.geoJson(geoJson).addTo(map)
     }
   }
 }

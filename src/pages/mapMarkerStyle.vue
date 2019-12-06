@@ -16,7 +16,7 @@
 
 <script>
 import L from 'leaflet'
-import Provider from './chinatmsproviders'
+import Provider from '@/components/chinatmsproviders'
 require('leaflet/dist/leaflet.css')
 export default {
   data () {

@@ -9,43 +9,44 @@ let routerArr = [
   {
     path: '/mapBasic',
     name: '基础使用',
-    component: resolve => require(['@/components/mapBasic'], resolve),
+    component: resolve => require(['@/pages/mapBasic'], resolve),
   },
   {
     path: '/mapMarker',
-    name: 'mapMarker',
-    component: resolve => require(['@/components/mapMarker'], resolve),
+    name: 'marker标记',
+    component: resolve => require(['@/pages/mapMarker'], resolve),
   },
   {
     path: '/mapGeoJson',
-    name: 'mapGeoJson',
-    component: resolve => require(['@/components/mapGeoJson'], resolve),
-  },
-  {
-    path: '/mapMarkerStyle',
-    name: 'mapMarkerStyle',
-    component: resolve => require(['@/components/mapMarkerStyle'], resolve),
-  },
-  {
-    path: '/mapChangeLayer',
-    name: 'mapChangeLayer',
-    component: resolve => require(['@/components/mapChangeLayer'], resolve),
-  },
-  {
-    path: '/mapCitySelect',
-    name: 'mapCitySelect',
-    component: resolve => require(['@/components/mapCitySelect'], resolve),
-  },
-  {
-    path: '/mapMarkercluster',
-    name: 'mapMarkercluster',
-    component: resolve => require(['@/components/mapMarkercluster'], resolve),
+    name: 'GeoJson行政区划分',
+    component: resolve => require(['@/pages/mapGeoJson'], resolve),
   },
   {
     path: '/mapGeoJsonInvert',
-    name: 'mapGeoJsonInvert',
-    component: resolve => require(['@/components/mapGeoJsonInvert'], resolve),
-  }
+    name: 'GeoJson行政区划分反选',
+    component: resolve => require(['@/pages/mapGeoJsonInvert'], resolve),
+  },
+  {
+    path: '/mapMarkerStyle',
+    name: 'marker自定义样式',
+    component: resolve => require(['@/pages/mapMarkerStyle'], resolve),
+  },
+  {
+    path: '/mapChangeLayer',
+    name: '自定义切换图层',
+    component: resolve => require(['@/pages/mapChangeLayer'], resolve),
+  },
+  {
+    path: '/mapCitySelect',
+    name: '自定义城市',
+    component: resolve => require(['@/pages/mapCitySelect'], resolve),
+  },
+  {
+    path: '/mapMarkercluster',
+    name: 'markercluster点聚合',
+    component: resolve => require(['@/pages/mapMarkercluster'], resolve),
+  },
+  
 
 
 

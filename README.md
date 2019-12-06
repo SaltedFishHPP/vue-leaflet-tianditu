@@ -18,7 +18,7 @@ require('leaflet/dist/leaflet.css')
 ## 引入天地图
 
 ``` bash
-import Provider from './chinatmsproviders'
+import Provider from '@/components/chinatmsproviders'
 ```
 
 ## 相关解释地址

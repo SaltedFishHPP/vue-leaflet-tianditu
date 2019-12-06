@@ -4,8 +4,8 @@
       <p
         v-for="(item, index) in mapList"
         :key="index"
-        :class="{'active-class':nowPath == item.link}"
-        @click="$router.push(item.link)">
+        :class="{'active-class':nowPath == item.path}"
+        @click="$router.push(item.path)">
         {{item.name}}
       </p>
     </div>
@@ -18,19 +18,7 @@ export default {
   name: 'App',
   data(){
     return{
-      mapList:[
-        {name:'基础使用',link:'/mapBasic'},
-        {name:'marker标记',link:'/mapMarker'},
-        {name:'GeoJson行政区划分',link:'/mapGeoJson'},
-        {name:'GeoJson行政区划分反选',link:'/mapGeoJsonInvert'},
-        {name:'marker自定义样式',link:'/mapMarkerStyle'},
-        {name:'自定义切换图层',link:'/mapChangeLayer'},
-        {name:'自定义城市',link:'/mapCitySelect'},
-        {name:'markercluster点聚合',link:'/mapMarkercluster'},
-
-
-        
-      ],
+      mapList:[],
       nowPath: ''
     }
   },
@@ -43,6 +31,9 @@ export default {
 
     }
   },
+  created(){
+    this.mapList = this.$router.options.routes.slice(1)
+  }
 }
 </script>
 
@@ -57,6 +48,7 @@ export default {
 }
 .left-bar{
   width: 10%;
+  min-width: 200px;
 }
 .router-view{
   flex: 1;

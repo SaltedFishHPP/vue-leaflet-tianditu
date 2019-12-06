@@ -23,9 +23,9 @@
 
 <script>
 import L from "leaflet";
-import Provider from "./chinatmsproviders";
+import Provider from "@/components/chinatmsproviders";
 require("leaflet/dist/leaflet.css");
-import geoJson from "./geojson2";
+import geoJson from "@/components/geojson/geojsonZhejiang";
 
 export default {
   data() {
@@ -50,7 +50,7 @@ export default {
   },
   mounted() {
     Provider(L); // 挂载插件
-    this.computedGeo([geoJson]); // 修改geojson的输出方式
+    this.computedGeo([geoJson]); // 修改geojson的输出方式    
     setTimeout(() => {
       // 因为地图信息有使用到geoJson里的信息，所以需要等待数据修改完后才能进行地图的加载
       this.getMap();
