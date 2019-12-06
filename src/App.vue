@@ -22,9 +22,14 @@ export default {
         {name:'基础使用',link:'/mapBasic'},
         {name:'marker标记',link:'/mapMarker'},
         {name:'GeoJson行政区划分',link:'/mapGeoJson'},
+        {name:'GeoJson行政区划分反选',link:'/mapGeoJsonInvert'},
         {name:'marker自定义样式',link:'/mapMarkerStyle'},
         {name:'自定义切换图层',link:'/mapChangeLayer'},
         {name:'自定义城市',link:'/mapCitySelect'},
+        {name:'markercluster点聚合',link:'/mapMarkercluster'},
+
+
+        
       ],
       nowPath: ''
     }

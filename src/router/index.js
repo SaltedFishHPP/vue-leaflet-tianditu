@@ -36,6 +36,18 @@ let routerArr = [
     name: 'mapCitySelect',
     component: resolve => require(['@/components/mapCitySelect'], resolve),
   },
+  {
+    path: '/mapMarkercluster',
+    name: 'mapMarkercluster',
+    component: resolve => require(['@/components/mapMarkercluster'], resolve),
+  },
+  {
+    path: '/mapGeoJsonInvert',
+    name: 'mapGeoJsonInvert',
+    component: resolve => require(['@/components/mapGeoJsonInvert'], resolve),
+  }
+
+
 
   
 ]
